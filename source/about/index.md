@@ -1,6 +1,7 @@
 ---
 title: about
 date: 2021-05-08 17:26:20
+comment: true
 ---
 
 ## hexo发生error：spawn failed错误的解决方法

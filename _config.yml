@@ -113,11 +113,4 @@ search:
   format: striptags
 local_search:
   enable: true
-comment:
-  enable: true
-  use: gitalk
-  gitalk:
-    github_id: qiaolingyan            # GitHub repo owner
-    repository: blog-issues           # Repository name to store issues
-    client_id: d497aebd1393e4084852             # GitHub Application Client ID
-    client_secret: fe2df06d7885541a3c098ad225dc39c6d64dc5f6        # GitHub Application Client Secret
+all_minifier: true # 压缩

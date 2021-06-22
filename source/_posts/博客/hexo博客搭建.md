@@ -190,6 +190,30 @@ hexo 需要本地编译后，再把编译文件推送到 Github
    ---
    ```
 
+### 资源压缩
+
+Keep 主题的源码中，HTML、CSS、JavaScript、图片等资源文件是没有打包压缩的。绝大部分的 Hexo 主题也是如此。庆幸的是，可以找到相关的插件来解决这一问题。
+
+这里可以使用 [hexo-all-minifier (opens new window)](https://github.com/chenzhutian/hexo-all-minifier)插件，它集成了 `html-minifier`、`clean-css`、`uglify` 和 `imagemin`，只需安装和简单的配置即可使用。
+
+1. 在 Hexo 项目根目录下安装 **hexo-all-minifier**。
+
+   ```sh
+   $ npm install hexo-all-minifier
+   ```
+
+2. 在 Hexo 配置文件 `_config.yml` 文件中，添加以下配置项：
+
+   ```yaml
+   all_minifier: true
+   ```
+
+### 图床管理
+
+采用 [PicX](https://picx.xpoet.cn/)
+
+基于 GitHub API 开发的图床神器，图片外链使用 jsDelivr 进行 CDN 加速。
+
 ### 自动化部署 Travis CI
 
 hexo 官方推荐 [Travis ](https://www.travis-ci.com/)
@@ -200,7 +224,7 @@ hexo 官方推荐 [Travis ](https://www.travis-ci.com/)
 
    点击 按钮`Activate all repositories using GitHub Apps`
 
-   ![img](/images/boke/1.jpg)
+   ![img](https://cdn.jsdelivr.net/gh/qiaolingyan/blog-img@master/boke/1.6baro3r78400.jpg)
 
    进入授权页面 点击 `APProve Install`
 
@@ -208,7 +232,7 @@ hexo 官方推荐 [Travis ](https://www.travis-ci.com/)
 
    登录 github.com ，点击 settings  -  Developer settings - Personal access tokens , 点击 **Generate new token**，输入 token 名称（**GH_TOKEN**），勾选 **repo** 选项，左下角`Generate token` Token生成成功 复制新生成的Token（一定要复制，只会看到这一次）
 
-   ![img](/images/boke/2.jpg)
+   ![img](https://cdn.jsdelivr.net/gh/qiaolingyan/blog-img@master/boke/2.3ymtcox7e3o0.jpg)
 
 4.  Travis CI 配置 Environment Variables 对应的项目仓库配置环境变量
 
@@ -220,7 +244,7 @@ hexo 官方推荐 [Travis ](https://www.travis-ci.com/)
 
      ps：保证 `DISPLAY VALUE IN BUILD LOG` 不被勾选 避免你的 Token 泄漏。
 
-   ![img](/images/boke/3.jpg)
+   ![img](https://cdn.jsdelivr.net/gh/qiaolingyan/blog-img@master/boke/3.5sjp6ek9zd40.jpg)
 
 5. 项目配置 CI
 
@@ -260,7 +284,7 @@ hexo 官方推荐 [Travis ](https://www.travis-ci.com/)
 
    回到Travis CI 官网 如下图所示 完成部署
 
-   ![img](/images/boke/5.jpg)
+   ![img](https://cdn.jsdelivr.net/gh/qiaolingyan/blog-img@master/boke/5.5xjowamqde80.jpg)
 
    
 
@@ -285,7 +309,7 @@ hexo 官方推荐 [Travis ](https://www.travis-ci.com/)
 
    * 创建一个有 **repo** 和 **workflow** 权限的 [GitHub Token](https://github.com/settings/tokens/new) 。
 
-     ![img](/images/boke/a.jpg)
+     ![img](https://cdn.jsdelivr.net/gh/qiaolingyan/blog-img@master/boke/a.6txlqloaru80.jpg)
 
 4. ##### 创建 repository secret
 
@@ -293,7 +317,7 @@ hexo 官方推荐 [Travis ](https://www.travis-ci.com/)
 
    * 步骤：私有仓库 -> `settings` -> `Secrets` -> `New repository secret`。
 
-     ![img](/images/boke/b.jpg)
+     ![img](https://cdn.jsdelivr.net/gh/qiaolingyan/blog-img@master/boke/b.2pwfps5n9l80.jpg)
 
    * 新创建的 secret `HEXO_DEPLOY` 在 Actions 配置文件要用到，需跟配置文件保持一致！
 

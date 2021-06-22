@@ -3,6 +3,7 @@
 # ---------------------------------------------------------------------------------------
 base_info:
   title: Qiao
+  subtitle: 
   author: qiao
   url: https://keep.xpoet.cn/
   # Logo image (You can use local image, image external link or don’t fill)
@@ -165,13 +166,13 @@ local_search:
   enable: true
   preload: true     # Preload the search data when the page loads
 
-
+all_minifier: true # 压缩
 # ---------------------------------------------------------------------------------------
 # Comment plugin
 # ---------------------------------------------------------------------------------------
 comment:
   enable: true
-  use: Gitalk  # values: valine | gitalk | twikoo
+  use: gitalk  # values: valine | gitalk | twikoo
 
   # Valine
   # See: https://github.com/xCss/Valine
@@ -183,10 +184,10 @@ comment:
   # Gitalk
   # See: https://github.com/gitalk/gitalk
   gitalk:
-    github_id: qiaolingyan           # GitHub repo owner
-    repository: https://github.com/qiaolingyan/linger-blog.git          # Repository name to store issues
-    client_id:             # GitHub Application Client ID
-    client_secret:         # GitHub Application Client Secret
+    github_id: qiaolingyan            # GitHub repo owner
+    repository: blog-issues           # Repository name to store issues
+    client_id: d497aebd1393e4084852             # GitHub Application Client ID
+    client_secret: fe2df06d7885541a3c098ad225dc39c6d64dc5f6        # GitHub Application Client Secret
 
   # Twikoo
   # See: https://github.com/imaegoo/twikoo
