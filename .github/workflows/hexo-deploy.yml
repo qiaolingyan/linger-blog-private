@@ -16,5 +16,5 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.HEXO_DEPLOY }} # secret 名
           PUBLISH_REPOSITORY: qiaolingyan/linger-blog # 公共仓库，格式：GitHub 用户名/仓库名
-          BRANCH: master # 分支，是推送到公共仓库里的master分支
+          BRANCH: gh-pages # 分支，是推送到公共仓库里的master分支
           PUBLISH_DIR: ./public # 部署 public 目录下的文件
