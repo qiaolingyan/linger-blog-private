@@ -200,7 +200,7 @@ hexo 官方推荐 [Travis ](https://www.travis-ci.com/)
 
    点击 按钮`Activate all repositories using GitHub Apps`
 
-   ![img](./img/1.jpg)
+   ![img](/images/boke/1.jpg)
 
    进入授权页面 点击 `APProve Install`
 
@@ -208,7 +208,7 @@ hexo 官方推荐 [Travis ](https://www.travis-ci.com/)
 
    登录 github.com ，点击 settings  -  Developer settings - Personal access tokens , 点击 **Generate new token**，输入 token 名称（**GH_TOKEN**），勾选 **repo** 选项，左下角`Generate token` Token生成成功 复制新生成的Token（一定要复制，只会看到这一次）
 
-   ![img](./img/2.jpg)
+   ![img](/images/boke/2.jpg)
 
 4.  Travis CI 配置 Environment Variables 对应的项目仓库配置环境变量
 
@@ -220,7 +220,7 @@ hexo 官方推荐 [Travis ](https://www.travis-ci.com/)
 
      ps：保证 `DISPLAY VALUE IN BUILD LOG` 不被勾选 避免你的 Token 泄漏。
 
-   ![img](./img/3.jpg)
+   ![img](/images/boke/3.jpg)
 
 5. 项目配置 CI
 
@@ -260,7 +260,7 @@ hexo 官方推荐 [Travis ](https://www.travis-ci.com/)
 
    回到Travis CI 官网 如下图所示 完成部署
 
-   ![img](./img/5.jpg)
+   ![img](/images/boke/5.jpg)
 
    
 
@@ -285,7 +285,7 @@ hexo 官方推荐 [Travis ](https://www.travis-ci.com/)
 
    * 创建一个有 **repo** 和 **workflow** 权限的 [GitHub Token](https://github.com/settings/tokens/new) 。
 
-     ![img](./img/a.jpg)
+     ![img](/images/boke/a.jpg)
 
 4. ##### 创建 repository secret
 
@@ -293,7 +293,7 @@ hexo 官方推荐 [Travis ](https://www.travis-ci.com/)
 
    * 步骤：私有仓库 -> `settings` -> `Secrets` -> `New repository secret`。
 
-     ![img](./img/b.jpg)
+     ![img](/images/boke/b.jpg)
 
    * 新创建的 secret `HEXO_DEPLOY` 在 Actions 配置文件要用到，需跟配置文件保持一致！
 
