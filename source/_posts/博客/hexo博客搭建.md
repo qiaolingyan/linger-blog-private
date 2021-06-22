@@ -1,10 +1,15 @@
+---
+title: hexo博客搭建
+date: 2021-06-22 10:38:06
+tags: [博客]
+categories: [博客]
+---
+
 ### 前言
 
 采用 hexo + keep + github 搭建自己的博客
 
 hexo 需要本地编译后，再把编译文件推送到 Github
-
-
 
 ### 开始搭建
 
@@ -201,7 +206,7 @@ hexo 官方推荐 [Travis ](https://www.travis-ci.com/)
 
 3. 创建 Personal Access Token
 
-   登录 github.com ，点击 settings  -  Developer settings - Personal access tokens , 点击 **Generate new token**，输入 token 名称（**GH_TOKEN**），勾选 **repo** 选项，左下角`Generate token` Token生成成功 复制新生成的Token（一定要复制，只会看到这一次）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
+   登录 github.com ，点击 settings  -  Developer settings - Personal access tokens , 点击 **Generate new token**，输入 token 名称（**GH_TOKEN**），勾选 **repo** 选项，左下角`Generate token` Token生成成功 复制新生成的Token（一定要复制，只会看到这一次）
 
    ![img](./img/2.jpg)
 
